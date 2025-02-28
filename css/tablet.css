@@ -1,0 +1,1156 @@
+@media screen and ((min-width:480px) and (max-width:1200px)){
+    body{
+        
+        color:whitesmoke;
+        background-color: rgb(22, 21, 21);
+        width:100%;
+        font-size: 1.1em;
+        overflow-x: hidden;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .content{
+        width:inherit;
+        max-width: inherit;
+        padding-left:2%;
+    }
+    .text{
+        width:100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 2s  linear;
+    }
+    .image{
+        width:100%;
+        max-width: 100%;
+        height: 200px;
+        background-color: rgba(255, 217, 0, 0.648);
+        position: relative;
+        overflow: hidden;
+        border-bottom:2px solid rgb(146, 125, 9) ;
+    }
+    .image img{
+        height:200px;
+        max-width: 100%;
+        width:100%;
+    }
+    .slider {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 767px;
+        width: 100%;
+        height: 200px;
+        transition: animation 1s ease-in-out; 
+    }
+    #navigation{
+        width:100%;
+        height:100%;
+        max-width: 60%;
+        position: fixed;
+        top:0;
+        bottom: 0;
+        margin-left: -103%;
+        transition:animation 1s ease-in-out;
+        background-color: rgba(22, 21, 21, 0.762);
+        list-style: none;
+        z-index: 10;
+        /*animation:slide_in 2s forwards;*/ 
+    }
+    .navbar{
+        width:100%;
+        z-index:100;
+        top:200px;
+        font-size: 1em;
+        padding: 1% 0%;
+        border-bottom: 2px solid gold;
+        background-image: linear-gradient(90deg ,black,black, rgba(255, 217, 0, 0.876) );
+    }
+    #dropdown{
+        padding: 2% 2% 2% 2%;
+        align-content: center;
+        background-color: whitesmoke;
+        border-radius: 50%;
+        cursor: pointer;
+       
+    }
+    #dropdown img{
+        background-color: aqua;
+        height:50px;
+        width:50px;
+    }
+    #navigation li{
+        font-size: 1.5em;
+        padding: 2% 2% 2% 2%;
+        color:gold;
+        padding-bottom: 4%;
+        border-top:1px solid gold;
+        border-bottom:1px solid gold;
+    }
+    .head_bar{
+        color:whitesmoke;
+        background-image: linear-gradient( rgb(255, 215, 0,0.762),rgb(0, 0, 0,0.762) );
+    }
+    #navigation li a{
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    #navigation li:hover{
+         transform: scale(1.05);
+         box-shadow: 0 0 5px whitesmoke;
+         background-color:rgba(32, 31, 31, 0.372) ;
+    }
+    #navigation li:hover a{
+        color:goldenrod;
+    }
+    .active{
+        background-color:rgb(50, 49, 44) ;
+    }
+    .title{
+       color:rgb(40, 38, 38);
+    }
+    .logo div h2{
+        color:gold;
+        transition: transform 1s ease-in-out;
+    }
+    span{
+        color:whitesmoke;
+    }
+    .logo .logo_text{
+        margin:0% 0% 0% 1% ;
+    }
+    .logo .logo_image{
+        margin:2% 0% 0% 0% ;
+    }
+    .logo_text h2{
+        margin: 0;
+    }
+    .logo_image img,.navtrigger img{
+        border-radius: 50%;
+        width:45px;
+        height: 45px;
+    }
+    .logo_image,.logo_text,.navtrigger {
+        display: inline-block;
+    }
+    .navtrigger{
+        float: right;
+        margin:1% 2% 0% 0% ;
+    }
+    .logo div h2:hover{
+        color:whitesmoke;
+        transform:scale(1.05);
+        text-shadow: 0 0 10px whitesmoke;
+    }
+    .logo div h2:hover > span{
+        color:gold;
+    }
+    /*index.php*/
+    .content .intro{
+        margin: 2% 0% 2% 0%;
+        padding: 1% 2% 4% 4%;
+        color:rgb(254, 251, 251);
+        height:35%;
+        width:90%;
+        background-image:url('../media/cross3.jpg');
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 5px rgb(246, 225, 111);
+    }
+    .content .intro h3{
+        color:gold;
+        opacity: 1;
+       
+    }
+    .content .intro .text{
+        animation: typing 4s  infinite alternate-reverse,
+        
+    }
+    .content .intro button{
+        color:rgb(202, 197, 197);
+        background-image: linear-gradient(to right,black,gold);
+        padding: 2% 2% 2% 2%;
+        border:1px solid rgb(122, 122, 122);
+        
+        border-radius: 10px;
+        transition: transform 0.5s ease-in-out,
+                     box-shadow 0.8s ease-in-out
+                    ,background-image 1s ease-in-out;
+    }
+    .content .intro button:hover{
+        transform: scale(1.05);
+        color:whitesmoke;
+        background-image: linear-gradient(to right,gold,black);
+        box-shadow: 0 0 3px whitesmoke;
+        
+
+    }
+    .content .intro span{
+         color:gold;
+         }
+     .content .intro p span{
+        color:gold;
+        }
+    .bible-verse{
+        margin: 4% 0% 2% 0%;
+        padding:2% 2% 2% 0%;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        width: 93%;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+    }
+    .bible_cont{
+        background-color:transparent;
+        margin: 3% 2% 2% 2%;
+        padding: 0% 2% 2% 0%;
+    }
+    .bible_cont p{
+        align-items: center;
+        margin-top: -3% ;   
+    }
+    .bible-verse h2{
+        color:gold;
+        margin:0% 0% 0% 2%;
+       
+    }
+    .bible-verse h3{
+        color:rgb(236, 201, 3);
+    }
+    .gallery{
+        display: inline-block;
+        background-color: transparent;
+        overflow:hidden;
+        padding: 2% 2% 0% 2%;
+        margin: 2% 0%;
+        height:35vh;
+        border-radius: 5px;
+       
+    }
+    .gallery_image{
+        display: inline-block;
+        width:31%;
+        max-width:31%;
+        background-color: transparent;
+        height:50vh;
+        padding:0% 1% 0% 0%;
+        border-radius: 10px;
+        z-index: 1;
+    }
+    .gallery_image img{
+        z-index: 1;
+        max-width:100%;
+        width:100%;
+        height:50vh;
+        border-radius: 10px;
+        box-shadow:  0 0 2px gold; 
+        transition: transform .1s ease-in-out; 
+    }
+    .gallery_image img:hover{
+        transform: scale(1.05); 
+        box-shadow:  0 0 5px gold; 
+        cursor: pointer;
+    }
+    .gallery h2{
+        margin:0% 0% 5% 0%;
+        margin:0% 0% 5% 0%;
+        color:gold;
+    }
+     .slide_set {
+        display: none;
+        position: absolute;
+        transition: animation 1s ease-in-out;   
+    }
+    .services{
+        max-width:92%;
+        margin: 4% 0% 2% 0%;
+        padding:2% 2% 2% 2%;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        font-size:1em; 
+        animation:backimage 5s infinite alternate-reverse;
+        transition: anumation .2s ease-in-out;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+        background-position: right;
+    }
+    .services h2{
+        margin:0% 0% 0% 0%;
+        color:gold;
+    }
+    .services h3,.services h4{
+        color:rgb(236, 201, 3);
+    }
+    .services .flyer{
+        float:right;
+        width: 30%;
+        height: inherit;
+        max-height: 20vh;
+    }
+    .service_cont .description{
+        display: inline-block;
+    }
+    .services .flyer img{
+        float:right;
+        width: 100%;
+        height: inherit;
+        max-height: 20vh;
+        border-radius:10px;
+
+        transition: transform 1s ease-in-out,
+                    box-shadow 1s ease-in-out;
+        box-shadow: 0 0 2px gold;
+    }
+    .services .flyer img:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 5px gold;
+    }
+    .about_us{
+        padding: 2% 0% 2% 0.5%;
+        max-width: 95%;
+        align-items: center;
+    }
+    .about_us .mission,.about_us .vision{
+        padding: 2% 1% 2% 1%;
+        display: inline-block;
+        width:45%;
+        margin: 0% 1% 2% 1%;
+        text-align: justify;
+        align-items: center;
+        box-shadow: 0 0 2px whitesmoke;
+        transition: transform 0.5s ease-in-out,
+                     box-shadow 0.8s ease-in-out
+                    ,background-image 1s ease-in-out;
+    }
+    .about_us .mission h3,.about_us .vision h3{
+        color:gold;
+        margin: 0% 0% 0% 0%;
+        text-align: center;
+        
+    }
+    .about_us .mission p,.about_us .vision p{
+        font-size: 1em;
+
+    }
+    .about_us .mission{
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+    }
+    .about_us .vision{
+        background-image: linear-gradient(to right,rgba(255, 217, 0, 0.071),black);
+    }
+    .about_us .mission button,.about_us .vision button{
+        color:rgb(202, 197, 197);
+        background-image: linear-gradient(to right,black,gold);
+        padding: 2% 2% 2% 2%;
+        border:1px solid rgb(122, 122, 122);
+        
+        border-radius: 10px;
+        transition: transform 0.5s ease-in-out,
+                     box-shadow 0.8s ease-in-out
+                    ,background-image 1s ease-in-out;
+    }
+    .about_us .mission button:hover,.about_us .vision button:hover{
+        transform: scale(1.05);
+        color:whitesmoke;
+        background-image: linear-gradient(to right,rgba(255, 217, 0, 0.071),black);
+        box-shadow: 0 0 3px whitesmoke;
+    }
+    .about_us .mission:hover,.about_us .vision:hover{
+        transform: scale(1.02);
+        color:whitesmoke;
+        background-image: linear-gradient(to right,rgba(255, 217, 0, 0.365),black,rgba(255, 217, 0, 0.365));
+        box-shadow: 0 0 3px whitesmoke;
+    }
+    button a{
+        color:inherit;
+    }
+/*index.php end*/
+/*about.php*/
+    a{
+        text-decoration: none;
+        color:rgb(243, 210, 27);
+    }
+    .content .about_info{
+        margin:1% 1% 1% 0%;
+        padding:2% 2% 2% 2%;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        width:90%;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+    }
+    .content .about_info h3{
+        color:gold;
+    }
+    .content .about_info p{
+        text-align: left;
+    }
+    .content .about_info span{
+        color:gold;
+    }
+    .content .B_logo{
+        width:90%;
+        margin:2% 1% 2% 0%;
+        padding:2% 2% 2% 2%;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        background-image: url(../media/cross1.jpg);
+        background-repeat:no-repeat repeat;
+        background-size: cover;
+    }
+    .content .B_logo img{
+        width:30%; 
+        display: inline-block;
+        border-radius: 50%;
+        box-shadow: 0 0 2px gold;
+        transition:transform .2s ease-in-out;
+    }
+    .content .B_logo img:hover{
+        transform: scale(1.05); 
+        box-shadow:  0 0 5px gold; 
+    }
+    .content .B_logo p span{
+        color:gold;
+    }
+    .content .B_logo h2{
+        color:gold; 
+        margin:0% 0% 2% 0%;
+    }
+    .content .B_pillars{
+        width:90%;
+        margin:2% 1% 2% 0%;
+        padding:2% 2% 2% 2%;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+    }
+    .content .B_pillars h2,.content .B_pillars h3{
+        color:gold;
+    }
+    .content .B_pillars .pillars li{
+        list-style: none;
+        display: inline-block;
+    }
+    .content .B_pillars .pillar_meaning {
+        max-width: 100%;
+        padding:2% 2% 2% 2%;
+        height:60px;
+        position: relative;
+        overflow: hidden;
+    }
+    .content .B_pillars .pillar_meaning .meaning{
+         height:100%;
+         padding:0% 2% 2% 0%;
+         display: inline-block;
+         width:100%;
+         display: none;
+         background-color: transparent;
+         transition: animation 1s ease-in-out;    
+    }
+    .content .B_pillars .pillar_meaning .meaning span{
+        color:gold;
+    }
+    .content .B_pillars .pillars{
+       color:rgb(248, 241, 196);
+       
+    }
+    .content .Departments{
+        width:90%;
+        margin:1% 1% 1% 0%;
+        padding:1% 1% 1% 2% ;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+    }
+    .content .Departments h2{
+        color:gold;
+    }
+   .content .Departments .B_army  p span ,.content .Departments .B_lounge  p span{
+         color:gold;
+   }
+   .content .Departments .B_army h3,.content .Departments .B_lounge  h3{
+    color:gold;
+    }
+    .content .commit{
+        width: 70%;
+        margin:2% 15% 2% 10%;
+        padding:2% 2% 2% 2%;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        font-size: 1em;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+    }
+    .content .commit h2{
+        color:gold;
+    }
+    .content .commit .image_cont{
+        height:230px;
+        overflow: hidden;
+        position: relative;
+    }
+    .content .commit .image_cont .img_slide{
+        padding:2% 2% 2% 2%;
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none; 
+        transition:display 3s ease-in-out;
+    }
+    .content .commit .image_cont h3{
+        color:gold;
+    }
+    .content .commit .image_cont img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px gold;
+    }
+    .content .commit .description{
+        height: 100px;
+        overflow: hidden;
+        position: relative;   
+    }
+    .content .commit .description .definition{
+        padding:2% 2% 2% 2%;
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+    }
+    .content .commit .description .definition p{
+        margin: 1% 0% 1% 0%;
+    }
+    .content .commit .description .definition span{
+        color:gold;
+    }
+    .content .B_activities{
+        margin:2% 1% 2% 0%;
+        width:90%;
+        padding:2% 2% 2% 2% ;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+    }
+    .content .B_activities h2,.content .B_activities p span{
+        color:gold;
+    }
+    .content .mission_version{
+        margin:2% 1% 2% 1%;
+        padding:2% 2% 2% 2%;
+        overflow: hidden;
+        height:230px;
+    }
+    .content .mission_version h2{
+        color:gold;
+    }
+    .content .mission_version h3{
+        color:gold;
+    }
+    .content .mission_aboutus{
+        padding:0% 2% 2% 2%;
+        object-fit: cover;
+        position: absolute;
+       
+        height: 100%;
+        object-fit: cover;
+        display: none; 
+        transition:display 3s ease-in-out;
+    }
+  
+/*about.php end*/
+/*history.php end*/
+    .content .achievements{
+        margin: 1% 1% 1% 1%;
+        width:93%;
+    }
+    .achievements .year_options{
+        color:gold;
+        padding: 1% 1% 1% 0%;
+        background-color: transparent;
+    }
+    .achievements .year_options select{
+        background-color: transparent;
+        color:gold;
+        border: none;
+    }
+    .achievements .year_options select option{
+        background-color: black;
+        border: 1px solid gold;
+    }
+    .achievements .year_options select option:hover{
+        background-color: gold;
+        color:black;
+    }
+    .achievements .year_options select:focus{
+        border: none; 
+    }
+    .achievements .title_option{
+        padding: 1% 1% 1% 0%;
+    }
+    .title_option h2{
+        color:gold;
+        margin:0;
+    }
+    .achievements .context{
+        height:300px;
+        width:60%;
+        overflow:auto;
+        margin: 0% 1% 0% 1%;
+        padding: 2% 2% 2% 2%;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+        display: inline-block;
+       
+    }
+    .achievements .history_slide{
+       display: inline-block;
+       width:28%;
+       padding:1% 1% 1% 1%;
+       margin: -5% 1% 0% 1%;
+       height:300px;
+       overflow: hidden;
+    }
+    .history_slide .history_images{
+        height:100%;
+        width:100%;
+        display: inline;
+    }
+    .history_slide .history_image img{
+        width:100%;
+        height:300px;
+        box-shadow: 0 0 2px whitesmoke;
+        border-radius: 10px;
+    }
+    .remark {
+        margin:1% 1% 1% 1%;
+        padding: 2% 2% 2% 2%;
+    }
+    .remark h2{
+        color: gold; 
+    }
+    .remark .slide_container{
+        padding: 2% 1% 2% 1%;
+        overflow: hidden;
+        height:310px;  
+        
+    }
+    .slide_container .event_slide{
+        border-radius: 5px;
+        margin:1% 1% 1% 1%;
+        background-image: linear-gradient(to right,black,black,rgba(255, 217, 0, 0.071));
+        box-shadow: 0px 0px 5px gold;
+        position: relative;
+        display:inline-block ;
+        z-index: 0;
+        width:180px;
+        height:310px;
+    }
+    .slide_container .event_slide img{
+        height: 150px;
+        width:100%;
+        border-bottom-color:gold;
+        border-bottom-style: outset;
+        border-bottom-right-radius: 120px;
+        border-top-right-radius:5px;
+        border-top-left-radius:5px;
+    }
+    .event_slide .historical_details{
+        padding: 2% 2% 5% 2%;
+        overflow-y: auto;
+    }
+    .event_slide .historical_details h5 {
+        margin:0;  
+    }
+    .event_slide .historical_details h5 span{
+        color:gold;
+    }
+    .event_slide .historical_details p{
+        overflow: hidden;
+        font-size: 0.8em;
+    }
+    #active{
+        display: inline-block;
+        margin-left:20%;
+     
+    }
+    #next{
+        display:inline-block ;
+        margin-left:-20%;
+       opacity: 0.6;
+       transform: scale(0.8);
+    }
+    .remark  .prev,.remark  .next {
+        z-index: 0;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.076));
+        font-size: 30px;
+        box-shadow: 0px 0px 1.5px gold;
+        display: inline;
+        color: whitesmoke;
+        margin-top:130px;
+        padding: 2% 3% 3% 2%;
+        border-radius: 10px;   
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    .remark  .prev:hover,.remark  .next:hover {
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.076));
+        box-shadow: 0px 0px 5px gold;
+        opacity:1;
+        transform: scale(1.01);
+    }
+    .remark  .next {
+        float: right;
+    }
+    .remark  .prev {
+        float: left;
+    }
+/*history.php end*/
+/*updates.php */
+    .content .searchbar{
+        align-items: center;
+        padding: 1% 1% 1% 1%;
+        color:whitesmoke;
+        width:90%;
+    }
+    .searchbar input,.searchbar input:active{
+        margin: 0% 10% 0% 10%;
+        border: 1px solid gold;
+        height:50px;
+        font-size: 1.2em;
+        width:80%;
+        color:whitesmoke;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    .searchbar h2{
+        color: gold;
+    }
+    .big_slide{
+      width:93%;
+      margin: 3% 0% 0 0%;
+      padding: 1% 1% 1% 1%;
+      font-size: 1.2em;
+    }
+    .big_slide .slideshow-container{
+        padding: 1% 1% 1% 1%;
+        margin: 0 0% 0 2.5%;
+        width:95%;
+        position: relative;
+        margin: auto;
+    }
+    .slideshow-container .prev,.slideshow-container .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        
+      }
+      .slideshow-container .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .slideshow-container .mySlides .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      .slideshow-container .mySlides {
+        display: none
+      }
+      .slideshow-container .mySlides img {
+        width:20%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px gold;
+        height:300px;
+      }
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      .stories{
+        background-color: transparent;
+        padding: 1% 1% 1% 1%;
+        max-height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .stories .story{
+        width:27%;
+        height:120px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 1% 1% 1% 2%; ;
+      }
+      .stories .story p{
+        margin:0;
+        font-size: 0.7em;
+      }
+      .stories .story img{
+        width:100%;
+        height:100px;
+        border-radius: 5px;
+      }
+      .reader h2{
+        color:gold;
+      }
+      .reader  img{
+        margin:2% 1% 2% 1%;
+        width:100%;
+        border-radius: 5px;
+        height: 150px;
+        box-shadow: 0px 0px 10px gold;
+      }
+      .reader .story_context p {
+        max-height:300px;
+        width:100%;
+        margin:2% 2% 2% 2%;
+        padding:2% 2% 2% 0%;
+        overflow:auto; 
+      }
+/*updtaes.php end*/
+/*gallery.php */
+      .content .package_image{
+        max-height:450px;
+        width:90%;
+        margin:1% 2% 1% 2%;
+        padding:1% 1% 1% 1%;
+      }
+      .package_image img{
+        width:24.2%;
+        height:80px;
+      }
+      .memories,.large{
+        
+        height:300px;
+        margin: 1% 1% 1% 1%;
+        padding: 1% 1% 1% 1%;
+        width:60%;
+        display: inline-block;
+      }
+      .add_image{
+        width:30%;
+        display:inline-block;
+      }
+      .add_image img{
+        width:100%;
+        height:150px;
+      }
+      .memories .gallery_cont{
+        width:100%;
+        
+      }
+      .gallery_images{
+        display: none;
+      }
+      .memories .gallery_cont .gallery_images img,.large img{
+        width:100%;
+        height:300px;
+      }
+      .image_viewer{
+        width:100%;
+        height:100%;
+        position: fixed;
+        top:0;
+        bottom: 0;
+        transition:animation 1s ease-in-out;
+        background-color:rgba(0, 0, 0, 0.963);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        display: none;
+      }
+      .image_viewer img{
+        margin:auto;
+        display: block;
+        width:100%;
+        height: 50vh;
+        top:50%;
+      }
+      .image_viewer .prev,.image_viewer .next{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color:gold;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+      .image_viewer .next{
+        float: right;
+        margin-left:80%;
+      }
+      .image_viewer .prev{
+        float: left;
+        margin-left:-80%;
+      }
+/*gallery.php end*/
+/*service.php*/
+       .slideshow-containers .mySlides{
+          width:100%;
+          border-radius: 5px;
+          box-shadow: 0 0 5px whitesmoke;
+          height:250px;
+          background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+          padding:0% 1% 1% 2%;
+          list-style:circle;
+       } 
+       .mySlides .service_songs{
+        width:100%;
+        border-radius: 5px;
+        padding:1% 1% 1% 2%;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+       }
+       .mySlides .service {
+         border-radius: 10px;
+         font-size:0.8em; 
+         color:gold;
+       }
+       .mySlides .service_songs h3{
+          margin:1% 0 1% 0;
+          color:gold;
+       }
+       .slideshow-containers .mySlides img{
+        height:250px;
+        width:100%;
+        border-radius:5px;
+       }
+       .slideshow-containers .mySlides .service_songs li::marker{
+          color: gold;
+       }
+       .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .slideshow-containers div .active, .dot:hover {
+        background-color: rgb(224, 190, 3);
+      }
+      .slideshow-containers{
+        width:90%;
+        position: relative;
+        margin: auto;
+      }
+      .slideshow-containers .mySlide{
+          width:100%;
+          border-radius: 5px;
+          box-shadow: 0 0 5px whitesmoke;
+          height:150px;
+          background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+          padding:0% 1% 1% 2%;
+          list-style:circle;
+      }
+      .B_song video{
+        height:250px;
+        width:100%;
+        border-radius: 5px;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+      }
+      .songs{
+          margin:1% 1% 5% 1%;
+          width:93%;
+      }
+      .B_song{
+        padding:2% 2% 2% 2%;
+        margin:2% 1% 4% 1%;
+        border-radius: 5px;
+        box-shadow: 0 0 5px whitesmoke;
+        background-image: linear-gradient(to right,black,rgba(255, 217, 0, 0.071));
+      }
+      .songs h2 ,.B_song p span {
+        color:gold;
+      } 
+     
+/*service.php end*/
+    .footer{
+        max-width: 94%;
+        background-image: linear-gradient(rgba(255, 217, 0, 0.071),black,black);
+        border-top: 2px solid gold;
+        padding: 2% 2% 2% 2%;
+        font-size: 1em;
+    }
+    .footer .nav_2,.footer .contacts{
+        
+        padding: 2% 2% 2% 2%;
+        align-items: center;
+        width:45%;
+        display: inline-block;
+    }
+    
+    .footer .nav_2 li,.footer .contacts li{
+       list-style: none;
+       color:rgb(114, 112, 112);
+    }
+    .footer .nav_2 h3,.footer .contacts h3{
+        margin: 0% 0% 2% 0%;
+        color:gold;
+     }
+    .footer li a{
+        text-decoration: none;
+        color:rgb(114, 112, 112);
+    }
+    .footer li a:hover{
+        color:gold;
+    }
+    .footer .copyrights span{
+        color:gold;
+    }
+
+
+@keyframes fad_out {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 0.5;
+        
+    }
+}
+@keyframes fad_in {
+    0%{
+        opacity: 0.5;
+       
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+@keyframes slide_in {
+    from{
+        margin-left:-105%;
+     
+    }
+    to{
+        margin-left:-3%; 
+    }
+}
+@keyframes slide_out {
+    from{
+        margin-left:-3%;
+     
+    }
+    to{
+        margin-left:-105%; 
+    }
+}
+@keyframes typing {
+    from{width:0}
+}
+@keyframes glow{
+    0%{
+        transform: scale(1.0);
+    }
+    25%{
+        transform: scale(1.025);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    75%{
+        transform: scale(1.075);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes slide_right {
+    from{
+        margin-left:-3%;
+     
+    }
+    to{
+        margin-left:-105%; 
+    }
+}
+@keyframes slide_down {
+    from{
+        transform: translateY(-100%);
+    }
+    to{ 
+        transform: translateY(0%); 
+    }
+}
+@keyframes slide_up {
+    from{
+        transform: translateY(100%);
+    }
+    to{ 
+        transform: translateY(0%); 
+    }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+}
+@keyframes slideRight {
+    100% {
+        transform: translateX(0);
+    }
+    0% {
+        transform: translateX(100%);
+    }
+}
+@keyframes disolve {
+    0% {
+       opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+} 
+@keyframes moveLeft{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        
+        transform: translateX(-200%);
+    }
+}
+@keyframes pop_in {
+    from{
+         opacity: 0.6;
+         transform: scale(0.8);
+         margin-left: -20%;
+         margin:-20%;
+    }
+    to{
+         opacity: 1;
+         transform: scale(1);
+         margin:-40%;
+    }
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+}
